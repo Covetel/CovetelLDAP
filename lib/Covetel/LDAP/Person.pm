@@ -132,6 +132,31 @@ sub add {
 	}
 }
 
+sub update {
+    my $self = shift; 
+    my $entry = $self->entry;
+    my $ldap = $self->ldap->server;
+
+    my $mesg = $ldap->modify($entry, 
+        replace => {
+            cn => $self->firstname.' '.$self->lastname,
+            uidNumber => $self->uidNumber,
+            gidNumber => $self->uidNumber,
+            sn => $self->lastname,
+            givenName => $self->firstname,
+            pager => $self->ced,
+            mail => $self->email,
+        }
+    );
+	$self->ldap->message($mesg);
+
+    if ($mesg->is_error){
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
 sub del {
 	my $self = shift;
 	my $mesg = $self->ldap->server->delete($self->dn);
