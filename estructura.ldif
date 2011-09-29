@@ -1,0 +1,87 @@
+dn: dc=example,dc=com,dc=ve
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: EXAMPLE
+dc: example
+structuralObjectClass: organization
+entryUUID: 986b8336-faa9-102f-9d55-d18a98ec551f
+creatorsName: cn=admin,dc=example,dc=com,dc=ve
+createTimestamp: 20110414061009Z
+entryCSN: 20110414061009.400047Z#000000#000#000000
+modifiersName: cn=admin,dc=example,dc=com,dc=ve
+modifyTimestamp: 20110414061009Z
+
+dn: cn=admin,dc=example,dc=com,dc=ve
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword:: e2NyeXB0fVl6WjlWb3FhTWxYVmM=
+structuralObjectClass: organizationalRole
+entryUUID: 98800a5e-faa9-102f-9d56-d18a98ec551f
+creatorsName: cn=admin,dc=example,dc=com,dc=ve
+createTimestamp: 20110414061009Z
+entryCSN: 20110414061009.534585Z#000000#000#000000
+modifiersName: cn=admin,dc=example,dc=com,dc=ve
+modifyTimestamp: 20110414061009Z
+
+dn: ou=Mantenimiento,dc=example,dc=com,dc=ve
+objectClass: organizationalUnit
+objectClass: top
+ou: Mantenimiento
+description:: Tm8gYm9ycmFyIGVzdGEgcmFtYSwgbmVjZXNhcmlhIHBhcmEgbGEgY3JlYWNpw7Nu
+ IGRlIHVzdWFyaW9z
+structuralObjectClass: organizationalUnit
+entryUUID: 98814ed2-faa9-102f-9d57-d18a98ec551f
+creatorsName: cn=admin,dc=example,dc=com,dc=ve
+createTimestamp: 20110414061009Z
+entryCSN: 20110414061009.542893Z#000000#000#000000
+modifiersName: cn=admin,dc=example,dc=com,dc=ve
+modifyTimestamp: 20110414061009Z
+
+dn: cn=Usuario Mantenimiento,ou=Mantenimiento,dc=example,dc=com,dc=ve
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+givenName: Usuario
+sn: Mantenimiento
+cn: Usuario Mantenimiento
+uid: umantenimiento
+userPassword:: e01ENX1NV2llLzE5UGtsVHV1U1ByY1luZVN3PT0=
+gidNumber: 1000
+homeDirectory: /home/users/umantenimiento
+description: Este usuario se usa para calcular el proximo uidNumber, no borrar!
+uidNumber: 1001
+structuralObjectClass: inetOrgPerson
+entryUUID: 988296de-faa9-102f-9d58-d18a98ec551f
+creatorsName: cn=admin,dc=example,dc=com,dc=ve
+createTimestamp: 20110414061009Z
+entryCSN: 20110414061009.551292Z#000000#000#000000
+modifiersName: cn=admin,dc=example,dc=com,dc=ve
+modifyTimestamp: 20110414061009Z
+
+dn: ou=Personas,dc=example,dc=com,dc=ve
+objectClass: organizationalUnit
+objectClass: top
+ou: Personas
+structuralObjectClass: organizationalUnit
+entryUUID: cfb6629a-faac-102f-881e-49b517800155
+creatorsName: cn=admin,dc=example,dc=com,dc=ve
+createTimestamp: 20110414063310Z
+entryCSN: 20110414063310.655613Z#000000#000#000000
+modifiersName: cn=admin,dc=example,dc=com,dc=ve
+modifyTimestamp: 20110414063310Z
+
+dn: ou=Grupos,dc=example,dc=com,dc=ve
+objectClass: organizationalUnit
+objectClass: top
+ou: Grupos
+structuralObjectClass: organizationalUnit
+entryUUID: e7361816-faac-102f-881f-49b517800155
+creatorsName: cn=admin,dc=example,dc=com,dc=ve
+createTimestamp: 20110414063350Z
+entryCSN: 20110414063350.080168Z#000000#000#000000
+modifiersName: cn=admin,dc=example,dc=com,dc=ve
+modifyTimestamp: 20110414063350Z
+
